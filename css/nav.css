@@ -169,3 +169,26 @@ color: #e74c3c;
 .modal-footer {
  font: 400 normal 1.125em "Roboto",Arial,Verdana,sans-serif;
   } 
+ .center {
+    margin-top:50px;   
+}
+
+.modal-header {
+    padding-bottom: 5px;
+}
+
+.modal-footer {
+        padding: 0;
+    }
+    
+.modal-footer .btn-group button {
+    height:40px;
+    border-top-left-radius : 0;
+    border-top-right-radius : 0;
+    border: none;
+    border-right: 1px solid #ddd;
+}
+    
+.modal-footer .btn-group:last-child > button {
+    border-right: 0;
+}
