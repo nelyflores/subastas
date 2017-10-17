@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/formularioproducto.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +24,9 @@
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header navbar-right">
-      <a class="navbar-brand" href="#">
+      <!-- <a class="navbar-brand" href="#">
         <img alt="Brand" src="...">
-      </a>
+      </a> -->
       <button type="button" class="btn btn-default navbar-btn pull-right navbar-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ingresar</button>
         <ul id="login-dp" class="dropdown-menu pull-right">
         <li>
@@ -69,9 +70,9 @@
     </div>
   </div>
 </nav>
-    
 
-  
+
+
 
 <div class="container mt40">
     <section class="row">
@@ -146,10 +147,101 @@
                     </span>
                 </div>
             </div>
-        </article>                                              
+        </article>
 
 </section>
 </div>
+
+<!-- modal para registrar nuevo producto -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div id="exampleModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo producto
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </h5>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Título</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Máximo 30 caracteres">
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Descripción</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Máximo 1000 caracteres"></textarea>
+          </div>
+
+          <!-- url -->
+          <div class="form-group">
+            <label for="example-url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+              <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="example-url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+              <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="example-url-input" class="col-2 col-form-label">URL</label>
+            <div class="col-10">
+              <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+            </div>
+          </div>
+
+          <div class="form-inline">
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Precio inicial</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+
+            <div class="form-group">
+              <label for="formGroupExampleInput2">Duracion</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+            </div>
+          </div>
+
+        </form>
+
+        <div class="form-group">
+          <div id="map"></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      ...
+    </div>
+  </div>
+</div> -->
+
+
+
+<!-- fin del modal de registro -->
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
