@@ -8,7 +8,7 @@ $(document).ready(function() {
         $('#'+this.id+'-bs3').html(c);
     });      
     $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-        event.preventDefault();
+      
         $(this).ekkoLightbox();
     });                                        
 }); 
