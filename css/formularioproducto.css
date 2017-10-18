@@ -25,10 +25,29 @@
   float: right;
 }
 
+/*.duracion{
+  float: right;
+  margin-left: 64px;
+}*/
+
+.ubicacion{
+  margin: 14px 0;
+}
+
 #map {
   height: 400px;
   width: 100%;
 }
+
+.subirProducto{
+  color: #fff;
+}
+
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
 
 #columns {
   -moz-column-count: 3;

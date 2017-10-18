@@ -19,65 +19,79 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Nuevo producto
+            <h3 class="modal-title">Nuevo producto
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </h5>
+            </h3>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
                 <label for="titulo-producto">Título</label>
-                <input type="text" class="form-control titulo" id="titulo-producto" placeholder="Máximo 30 caracteres">
+                <input type="text" class="form-control titulo" id="titulo-producto" placeholder="Máximo 30 caracteres" required>
                 <span id="contador-titulo" class="contador">0</span>
               </div>
               <div class="form-group">
-                <label for="exampleTextarea">Descripción</label>
-                <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Máximo 1000 caracteres"></textarea>
+                <label for="descripcionProducto">Descripción</label>
+                <textarea class="form-control" id="descripcionProducto" rows="3" placeholder="Máximo 1000 caracteres"></textarea>
               </div>
 
               <!-- url -->
               <div class="form-group">
-                <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                <label for="url1" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url1" required>
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                <label for="url2" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url2">
                 </div>
               </div>
 
               <div class="form-group">
-                <label for="example-url-input" class="col-2 col-form-label">URL</label>
+                <label for="url3" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="example-url-input">
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url3">
                 </div>
               </div>
 
-              <div class="form-inline">
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Precio inicial</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+              <div class="form-inline row justify-content-center">
+                <div class="form-group col-sm-6">
+                  <label for="precioInicial">Precio inicial</label>
+                  <input type="text" class="form-control" id="precioInicial" placeholder="$" required>
                 </div>
 
-                <div class="form-group">
-                  <label for="formGroupExampleInput2">Duracion</label>
-                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                <div class="form-group duracion col-sm-6">
+                  <label for="selecDuracion">Duración</label>
+                  <select class="form-control" id="selecDuracion">
+                    <option>5 min</option>
+                    <option>10 min</option>
+                    <option>15 min</option>
+                    <option>20 min</option>
+                    <option>25 min</option>
+                    <option>30 min</option>
+                  </select>
+
+                  <!-- <label for="formGroupExampleInput2">Duración</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input"> -->
                 </div>
               </div>
+
               <div class="form-group">
+                <label class="ubicacion">Agrega tu ubicación</label>
                 <div id="map"></div>
               </div>
+
             </form>
           </div>
+
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary">Subastar</button>
+            <button type="button" class="btn btn-primary"><a class="subirProducto" href="../index.html">Subastar</a></button>
           </div>
         </div>
       </div>
@@ -88,6 +102,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6RQX5EhXV7DX8nNpY7It71l_QcvupJl0&callback=initMap"></script>
     <script type="text/javascript" src="../js/form-producto.js"></script>
 
   </body>
