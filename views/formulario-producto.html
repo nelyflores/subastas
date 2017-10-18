@@ -22,48 +22,48 @@
             </h3>
           </div>
           <div class="modal-body">
-            <form>
+            <form id="SubastaNueva">
               <div class="form-group">
                 <label for="titulo-producto">Título</label>
-                <input type="text" class="form-control titulo" id="titulo-producto" placeholder="Máximo 30 caracteres" required>
+                <input type="text" class="form-control titulo" id="titulo-producto" placeholder="Máximo 30 caracteres" name="tituloSubasta" required>
                 <span id="contador-titulo" class="contador">0</span>
               </div>
               <div class="form-group">
                 <label for="descripcionProducto">Descripción</label>
-                <textarea class="form-control" id="descripcionProducto" rows="3" placeholder="Máximo 1000 caracteres"></textarea>
+                <textarea class="form-control" id="descripcionProducto" rows="3" placeholder="Máximo 1000 caracteres" name="descripcionSubasta"></textarea>
               </div>
 
               <!-- url -->
               <div class="form-group">
                 <label for="url1" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url1" required>
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url1" name="url1Subasta" required>
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="url2" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url2">
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" name="url2Subasta" id="url2">
                 </div>
               </div>
 
               <div class="form-group">
                 <label for="url3" class="col-2 col-form-label">URL</label>
                 <div class="col-10">
-                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" id="url3">
+                  <input class="form-control" type="url" placeholder="https://getbootstrap.com" name="url3Subasta" id="url3">
                 </div>
               </div>
 
               <div class="form-inline row justify-content-center">
                 <div class="form-group col-sm-6">
                   <label for="precioInicial">Precio inicial</label>
-                  <input type="text" class="form-control" id="precioInicial" placeholder="$" required>
+                  <input type="text" class="form-control" id="precioInicial" placeholder="$" name="precioSubasta" required>
                 </div>
 
                 <div class="form-group duracion col-sm-6">
                   <label for="selecDuracion">Duración</label>
-                  <select class="form-control" id="selecDuracion">
+                  <select class="form-control" id="selecDuracion" name="duracionSubasta">
                     <option>5 min</option>
                     <option>10 min</option>
                     <option>15 min</option>
@@ -82,12 +82,14 @@
                 <div id="map"></div>
               </div>
 
-            </form>
-          </div>
+           
+         
 
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" ><a class="cerrarProducto" href="../index.html">Cerrar</a></button>
-            <button type="button" class="btn btn-primary"><a class="subirProducto" href="../index.html">Subastar</a></button>
+            <button type="submit" class="btn btn-primary">Subastar</button>
+          </div>
+         </form>
           </div>
         </div>
       </div>
@@ -100,6 +102,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6RQX5EhXV7DX8nNpY7It71l_QcvupJl0&callback=initMap"></script>
     <script type="text/javascript" src="../js/form-producto.js"></script>
+    <script type="text/javascript" src="../js/agregarProductoFirebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.2/firebase.js"></script>
+    <script type="text/javascript">
+      var config = {
+    apiKey: "AIzaSyDdGVRy-DrxZT-bshmKywvG9gL9q48dzh4",
+    authDomain: "subastas-4b635.firebaseapp.com",
+    databaseURL: "https://subastas-4b635.firebaseio.com",
+    projectId: "subastas-4b635",
+    storageBucket: "subastas-4b635.appspot.com",
+    messagingSenderId: "94258785585"
+  };
+  firebase.initializeApp(config);
+  </script>
 
   </body>
 </html>
