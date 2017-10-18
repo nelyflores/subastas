@@ -1,19 +1,19 @@
-*{
+/**{
 	padding: 0;
 	margin:0;
-}
+}*/
+
 img{
 	max-width: 100%;
 	display: block;
 }
 
-.cylce-slideshow{
-	width: 100%
-	max-width:960px;
+.cycle-slideshow{
+	/*width: 100%
+	max-width:960px;*/
 	display: block;
 	position: relative;
-	margin: 20px auto;
-
+	margin: 40px 0;
 }
 
 .cycle-prev, .cycle-next{
@@ -46,6 +46,7 @@ img{
 	z-index: 99999;
 	cursor: pointer;
 }
+
 .cycle-pager a{
 	display: inline-block;
 	margin:0 5px;
@@ -60,6 +61,19 @@ img{
 .cycle-pager .thumb{
 	width: 10%;
 }
+
 .thumb{
 	display: block;
+}
+
+.modal-header{
+	background: #3D76E4;
+}
+
+.modal-oferta{
+	text-align: center;
+}
+
+.cantidad-ofertada{
+	font-size: 40px;
 }
