@@ -1,8 +1,8 @@
-(function(){
+$(window).load(function() {
   var cargarPagina = function(){
+    $('#subastar').modal('show')
     $("#titulo-producto").keyup(cuentaTitulo);
     $("#descripcionProducto").keyup(cuentaDescripcion);
-
   };
 
   var cuentaTitulo = function(){
@@ -43,9 +43,13 @@
     }
   };
 
-
   $(document).ready(cargarPagina);
-})();
+});
+
+
+// (function(){
+//
+// })();
 
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
@@ -79,4 +83,3 @@ function initMap() {
       'Error: Your browser doesn\'t support geolocation.');
     }
   }
-  
