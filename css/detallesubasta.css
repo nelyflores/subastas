@@ -1,7 +1,9 @@
 *{
 	padding: 0;
 	margin:0;
+  font-family: 'Quicksand', sans-serif !important ;
 }
+
 img{
 	max-width: 100%;
 	display: block;
@@ -62,4 +64,19 @@ img{
 }
 .thumb{
 	display: block;
+}
+
+
+
+/*estilos*/
+.navbar{
+	background-color: rgb(43, 172, 153)
+}
+
+.texto-blanco{
+  color:rgb(250, 250, 250)
+}
+
+body{
+  background-color: rgb(227, 227, 227)
 }
