@@ -67,7 +67,7 @@ img{
 	display: block;
 }
 
-<<<<<<< HEAD
+/*modal chiquito de confirmacion*/
 .modal-header{
 	background: #3D76E4;
 }
@@ -78,7 +78,7 @@ img{
 
 .cantidad-ofertada{
 	font-size: 40px;
-=======
+
 
 
 /*estilos*/
@@ -88,9 +88,4 @@ img{
 
 .texto-blanco{
   color:rgb(250, 250, 250)
-}
-
-body{
-  background-color: rgb(227, 227, 227)
->>>>>>> upstream/master
 }
