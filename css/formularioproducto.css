@@ -1,0 +1,75 @@
+.subastar{
+  padding: 5px;
+  border: 1px solid #cac4c4;
+  margin: 9px;
+  width: 78px;
+  height: 33px;
+}
+
+#exampleModal{
+  /*color: #114B5F;*/
+  background: rgba(255, 255, 255, 0.4);
+  /*background: linear-gradient(#3D76E4, #ECECEC);*/
+}
+
+.modal-header{
+  background: #3D76E4;
+}
+
+.titulo{
+  width: 96%;
+}
+
+#contador-titulo{
+  margin-top: -29px;
+  float: right;
+}
+
+/*.duracion{
+  float: right;
+  margin-left: 64px;
+}*/
+
+.ubicacion{
+  margin: 14px 0;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+}
+
+.subirProducto{
+  color: #fff;
+}
+
+a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+
+#columns {
+  -moz-column-count: 3;
+  -moz-column-gap: 10px;
+  -moz-column-fill: auto;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 10px;
+  -webkit-column-fill: auto;
+  column-count: 3;
+  column-gap: 15px;
+  column-fill: auto;
+}
+
+.pin {
+  -moz-column-break-inside: avoid;
+  -webkit-column-break-inside: avoid;
+  column-break-inside: avoid;
+  display: inline-block;
+  margin: 0 2px 15px;
+  padding: 15px;
+  border: 2px solid #FAFAFA;
+  box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+  background: #FEFEFE;
+  background-image: linear-gradient(45deg, #FFF, #F9F9F9);
+}

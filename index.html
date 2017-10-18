@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href="css/formularioproducto.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +24,14 @@
   <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header navbar-right">
-      <a class="navbar-brand" href="#">
+      <!-- <a class="navbar-brand" href="#">
         <img alt="Brand" src="...">
-      </a>
+      </a> -->
+
+      <button type="button" class="btn btn-secondary subastar" data-toggle="modal" data-target="#subastar">
+        <a href="views/formulario-producto.html">Subastar</a>
+      </button>
+
       <button type="button" class="btn btn-default navbar-btn pull-right navbar-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btnIngresar"> Ingresar</button>
         <ul id="login-dp" class="dropdown-menu pull-right">
         <li>
@@ -45,10 +51,10 @@
                     <div class="form-group">
                        <label class="sr-only" for="exampleInputPassword2">Password</label>
                        <input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
-                        
+
                     </div>
-                 
-                   
+
+
                  </form>
                     <div class="form-group">
                        <button  type="button" class="btn btn-primary btn-block" id="botonLogin">Sign in</button>
@@ -61,9 +67,6 @@
         </li>
       </ul>
 
-
-
-
 <!-- line modal -->
 <div class="modal fade" id="squarespaceModal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -73,7 +76,7 @@
       <h3 class="modal-title" id="lineModalLabel">Nuevo Registro</h3>
     </div>
     <div class="modal-body">
-      
+
             <!-- content goes here -->
       <form>
               <div class="form-group">
@@ -84,7 +87,7 @@
                 <label for="registroPassword">Password</label>
                 <input type="password" class="form-control" id="registroPassword" placeholder="Password">
               </div>
-              
+
             </form>
 
     </div>
@@ -111,9 +114,9 @@
     </div>
   </div>
 </nav>
-    
 
-  
+
+
 
 <div class="container mt40">
     <section class="row">
@@ -188,7 +191,7 @@
                     </span>
                 </div>
             </div>
-        </article>                                              
+        </article>
 
 </section>
 </div>
