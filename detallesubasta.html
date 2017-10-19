@@ -21,7 +21,10 @@
     <![endif]-->
   </head>
   <body>
+    <!-- <nav class="navbar navbar-default">
+
     <nav class="navbar navbar-default text-right">
+
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
@@ -30,28 +33,101 @@
       <button type="button" class="btn btn-default navbar-btn">Sign in</button>
     </div>
   </div>
-</nav>
+</nav> -->
 
+<!-- Modal para registrar nuevo producto -->
+<div id="detalles" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title">aqui va titulo
+          <button type="button" class="close" aria-label="Close">
+            <a href="../index.html">&times;</a>
+          </button>
+        </h3>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <div class="cycle-slideshow" data-cycle-pager-template="<a class='thumb' href='#'><img src='{{src}}' width='100' height='50'></a>">
+              <span class="cycle-pager"></span>
+              <span class="cycle-prev">&#9001;</span>
+              <span class="cycle-next">&#9002;</span>
+              <img src="img/celular1.jpg">
+              <img src="img/celular2.jpg">
+              <img src="img/celular3.jpg">
+              <img src="img/celular4.jpg">
+              <img src="img/celular5.jpg">
+            </div>
+            <!-- <div class="container">
+              <div class="row">
+                <h1>Celular Vak S7 Edge Android 8GB Hd 5' Curva Wifi</h1>
+              </div>
+            </div> -->
+          </div>
 
-<div class="cycle-slideshow center-block" data-cycle-pager-template="<a class='thumb' href='#'><img src='{{src}}' width='100' height='50'></a>">
-<span class="cycle-pager"></span>
-<span class="cycle-prev">&#9001;</span>
-<span class="cycle-next">&#9002;</span>
+          <div class="form-inline row justify-content-center">
+            <div class="form-group col-sm-6">
+              <div>
+                <label for="precioInicial">Precio inicial</label>
+                <span>$</span>
+                <span id="precio-inicial">30</span>
+              </div>
 
-  <img src="img/celular1.jpg">
-   <img src="img/celular2.jpg">
-    <img src="img/celular3.jpg">
-    <img src="img/celular4.jpg">
-    <img src="img/celular5.jpg">
+              <div id="precio-actual">
+                <label>Precio actual $ </label>
+                <span class="cantidad-ofertadaTotal"></span>
+              </div>
+              <!-- <input type="text" class="form-control" id="precioInicial" placeholder="$" name="precioSubasta" required> -->
+            </div>
 
+            <div class="form-group col-sm-6">
+              <select class="form-control" id="ofertar" name="ofertar">
+                <option> 5 </option>
+                <option> 10 </option>
+                <option> 20 </option>
+                <option> 50 </option>
+                <option> 100 </option>
+                <option> 200 </option>
+              </select>
+
+          <!-- modal de confirmacion de cantidad a ofertar -->
+              <button type="button" class="btn btn-primary ofertar" data-toggle="modal" data-target=".bd-example-modal-sm">Ofertar</button>
+
+              <div class="modal fade bd-example-modal-sm" id="confirmacion" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Acabas de ofertar
+                        <button type="button" class="close" aria-label="Close"></button>
+                      </h3>
+                    </div>
+                    <div class="modal-oferta">
+                      <div class="cantidad-ofertada"></div>
+                      <div>¿Es correcto?</div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-secondary">Lo reconsiderare</button>
+                      <button class="btn btn-primary aceptar">Ofertar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- fin del modal de confirmacion -->
+
+            </div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" ><a class="cerrarProducto" href="../index.html">Cerrar</a></button>
+            <button type="submit" class="btn btn-primary">Listo</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </div>
-<div class="container">
-<div class="row">
-
-  <h1>Celular Vak S7 Edge Android 8GB Hd 5' Curva Wifi</h1>
-</div>
-
-</div>
+<!-- fin del modal de detalles de producto -->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -59,5 +135,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
 
     <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="js/detallesubasta.js"></script>
   </body>
 </html>
