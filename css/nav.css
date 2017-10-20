@@ -242,12 +242,37 @@ color: #e74c3c;
   border: none;
 }
 
+.navbar-inverse .navbar-toggle{
+  border: none;
+}
+
+.navbar-inverse .navbar-toggle:hover{
+  background-color: rgb(43, 172, 153);
+  border: none;
+}
+
 @media screen and (max-width: 768px) {
   .side-collapse-container{
     width:100%;
     position:relative;
     left:0;
     transition:left .4s;
+  }
+
+  .navbar-inverse .navbar-toggle{
+    border: none;
+    background-color: rgb(43, 172, 153);
+    
+  }
+
+  .navbar-inverse .navbar-toggle:hover{
+    background-color: rgb(43, 172, 153);
+    border: none;
+  }
+
+
+  .navbar-inverse{
+    background: none;
   }
 
   .side-collapse-container.out{
@@ -266,6 +291,11 @@ color: #e74c3c;
 
   .side-collapse.in {
     width:0;
+  }
+
+  .nav-pills {
+    display: inline-grid;
+    margin-left: 11px;
   }
 }
 
