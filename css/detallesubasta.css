@@ -69,7 +69,7 @@ img{
 
 /*modal chiquito de confirmacion*/
 .modal-header{
-	background: #3D76E4;
+	background-color: rgb(43, 172, 153)
 }
 
 .modal-oferta{
@@ -78,14 +78,17 @@ img{
 
 .cantidad-ofertada{
 	font-size: 40px;
-
-
-
-/*estilos*/
-.navbar{
-	background-color: rgb(43, 172, 153)
 }
 
-.texto-blanco{
-  color:rgb(250, 250, 250)
+.negrita{
+	font-weight: bold;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+.listo:hover{
+	text-decoration: none;
 }
