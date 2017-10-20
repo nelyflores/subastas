@@ -8,7 +8,7 @@ console.log(tarjetaSeleccionada);
     $('#detalles').modal('show');
     $('.ofertar').click(ofertar);
     $('.aceptar').click(cerrarModal);
-    
+
     mostrarDetalles();
   };
 
@@ -25,8 +25,10 @@ console.log(tarjetaSeleccionada);
 
     var suma1 = parseInt(precioInicio) + parseInt(valorOfertado);
 
-    $('#confirmacion').modal('hide');
     $('.cantidad-ofertadaTotal').append(suma1);
+    $('#confirmacion').modal('hide');
+    $('#confirmacion').remove();
+
   }
 
 

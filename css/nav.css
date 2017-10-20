@@ -251,7 +251,11 @@ color: #e74c3c;
   border: none;
 }
 
-@media screen and (max-width: 768px) {
+#pruebafirebas{
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
   .side-collapse-container{
     width:100%;
     position:relative;
@@ -262,7 +266,7 @@ color: #e74c3c;
   .navbar-inverse .navbar-toggle{
     border: none;
     background-color: rgb(43, 172, 153);
-    
+
   }
 
   .navbar-inverse .navbar-toggle:hover{
