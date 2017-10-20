@@ -52,6 +52,8 @@ const btnLogin= document.getElementById('botonLogin');
  const btnMensaje= document.getElementById('mensaje');
  const btnSubasta=document.getElementById('crearSubasta');
  const btnNavIngresar=document.getElementById('btnIngresar');
+ const btnIrdetalle =document.getElementById("irSubasta");
+ console.log(btnIrdetalle);
   btnSalir.addEventListener('click', e=>{
   firebase.auth().signOut();
 });
@@ -64,13 +66,15 @@ firebase.auth().onAuthStateChanged(firebaseUser=>{
     btnMensaje.style.display='block';
     btnSubasta.style.display='block';
     btnNavIngresar.style.display='none';
+   
 
   }else{
-    alert("no logueado");
+   // alert("no logueado");
     btnSalir.style.display='none';
     btnMensaje.style.display='none';
     btnSubasta.style.display='none';
     btnNavIngresar.style.display='block';
+   
   }
 });
  }());
