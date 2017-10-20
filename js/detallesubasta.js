@@ -29,8 +29,7 @@ console.log(tarjetaSeleccionada);
     $('.cantidad-ofertadaTotal').append(suma1);
   }
 
-<<<<<<< HEAD
-=======
+
 // cargando datos de la bd
 
 function mostrarDetalles(){
@@ -42,7 +41,7 @@ tarjetaSeleccionada.once("value", function(snap){
 
 
 
->>>>>>> upstream/master
+
   $(document).ready(cargarPagina);
 });
 
