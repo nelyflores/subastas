@@ -1,8 +1,15 @@
 $(window).load(function() {
+  var tarjetaSeleccionada = localStorage.getItem("tarjetaSeleccionada");
+console.log(tarjetaSeleccionada);
+
+  var refDetalle=firebase.database().ref().child("nuevasubasta");
+  console.log(refDetalle);
   var cargarPagina = function(){
     $('#detalles').modal('show');
     $('.ofertar').click(ofertar);
     $('.aceptar').click(cerrarModal);
+    
+    mostrarDetalles();
   };
 
   var ofertar = function(e){
@@ -22,6 +29,20 @@ $(window).load(function() {
     $('.cantidad-ofertadaTotal').append(suma1);
   }
 
+<<<<<<< HEAD
+=======
+// cargando datos de la bd
+
+function mostrarDetalles(){
+tarjetaSeleccionada.once("value", function(snap){
+  var datos= snap.val()
+  console.log(datos);
+});
+}
+
+
+
+>>>>>>> upstream/master
   $(document).ready(cargarPagina);
 });
 
